@@ -9,6 +9,8 @@ create table burgers
     auto_increment,
     burger_name VARCHAR
     (50),
-    devoured boolean
+    devoured boolean,
+    primary key
+    (id)
 );
 
