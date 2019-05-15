@@ -3,9 +3,9 @@ var router = express.Router();
 var burger = require("../models/burger.js");
 
 router.get("/", function (req, res) {
-    burger.selectAll(function (data) {
+    burger.selectAll(function (burger_data) {
         console.log(data);
-        res.render("index", { data });
+        res.render('index', { burger_data });
     })
 });
 
